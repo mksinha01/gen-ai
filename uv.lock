@@ -837,6 +837,7 @@ dependencies = [
     { name = "langchain-community" },
     { name = "langchain-core" },
     { name = "langchain-google-genai" },
+    { name = "langchain-huggingface" },
     { name = "langchain-mistralai" },
     { name = "langchain-openai" },
     { name = "pydantic" },
@@ -844,6 +845,7 @@ dependencies = [
     { name = "requests" },
     { name = "sentence-transformers" },
     { name = "tiktoken" },
+    { name = "transformers" },
     { name = "uvicorn" },
 ]
 
@@ -857,6 +859,7 @@ requires-dist = [
     { name = "langchain-community", specifier = "==0.2.12" },
     { name = "langchain-core", specifier = ">=0.2.43" },
     { name = "langchain-google-genai", specifier = "==1.0.8" },
+    { name = "langchain-huggingface", specifier = ">=0.0.3" },
     { name = "langchain-mistralai", specifier = "==0.1.12" },
     { name = "langchain-openai", specifier = "==0.1.22" },
     { name = "pydantic", specifier = "==2.8.2" },
@@ -864,6 +867,7 @@ requires-dist = [
     { name = "requests", specifier = ">=2.32.5" },
     { name = "sentence-transformers", specifier = "==3.0.1" },
     { name = "tiktoken", specifier = "==0.7.0" },
+    { name = "transformers", specifier = ">=4.57.6" },
     { name = "uvicorn", specifier = ">=0.41.0" },
 ]
 
@@ -1500,6 +1504,22 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/5e/c5/bbcbfee8cad5e2062bf027148ba74e6e9bfc60b2b0e93fff06a2abc8fe90/langchain_google_genai-1.0.8.tar.gz", hash = "sha256:4b5b074476f073f4f6f0d1e74c811bb66e4caaf2d6b57b14bf6a1eab36de8c4e", size = 34515, upload-time = "2024-07-22T17:14:39.814Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/79/00/6f7269590a23e172ea2b610929279c2a6bf53e1489f26ace42a06dfb0d9c/langchain_google_genai-1.0.8-py3-none-any.whl", hash = "sha256:675dab1afa8f165c6169512dae984c90fd9fe2e8a54bdf7d0a0ccd826ee719d4", size = 38737, upload-time = "2024-07-22T17:13:39.091Z" },
+]
+
+[[package]]
+name = "langchain-huggingface"
+version = "0.0.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "huggingface-hub" },
+    { name = "langchain-core" },
+    { name = "sentence-transformers" },
+    { name = "tokenizers" },
+    { name = "transformers" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e5/fd/52af613b26fdb565d0b49fd20aad554660b0b019a42e6db55061308084b0/langchain_huggingface-0.0.3.tar.gz", hash = "sha256:0637acf484c47323cf3dcc46745a93467f6955989af9b7c01e2382fe1b630aaf", size = 13140, upload-time = "2024-06-05T12:29:29.402Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/39/ce/ad7f50a6289cf562747df9a966b4d60a848571db2e57ad8d00dca2478096/langchain_huggingface-0.0.3-py3-none-any.whl", hash = "sha256:d6827adf3c7c8fcc0bca8c43c7e900c3bf68af9a1532a83d4b8ace137e02887e", size = 17802, upload-time = "2024-06-05T12:29:28.363Z" },
 ]
 
 [[package]]
