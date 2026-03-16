@@ -6,11 +6,12 @@ from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 # model = init_chat_model("gpt-4.1")
 # response = model.invoke("what is youer ip address?")
 # print(response.content)
-messages =[
+from langchain_core.messages import BaseMessage
+messages: list[BaseMessage] = [
     SystemMessage(content="you are chef")
 ]
 from langchain_openai import ChatOpenAI
-model = ChatOpenAI(model="gpt-4.1",temperature=0.5,max_tokens=20)
+model = ChatOpenAI(model="gpt-4.1",temperature=0.5,max_tokens=200)
 print("______________________________welcome type 0 to exit ______________________________")
 while True :
 
